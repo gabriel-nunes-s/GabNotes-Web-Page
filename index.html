@@ -5,33 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GabNotes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
+    <section id="header">
         <header>
+            <a href="#" class="logo">GabNotes</a>
             <nav>
-                <a href="">GabNotes</a>
-                <a href="">Download</a>
-                <a href="">About</a>
-                <a href="">Who am I?</a>
-                <a href="">Development</a>
+                <ul class="nav_links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#development">Development</a></li>
+                    <li><a href="#who-am-i">Who am I?</a></li>
+                </ul>
             </nav>
+            <a href="#"><button>Download</button></a>
         </header>
     </section>
 
-    <section>
-        <article>
-            <div>
-                <h1>GabNotes</h1>
+    <section id="content">
+            <div class="container">
+                <h1 class="title">GabNotes</h1>
+                <img src="img/Vectors.svg" alt="Vectors" class="vectors">
+                <p class="subtitle">Organize your notes and be more productive</p>
             </div>
-            <p>Organize your notes and be more productive</p>
-        </article>
+            <div class="images">
+                <img src="img/Frame 6.svg" alt="image" id="left">
+                <img src="img/Frame 5.svg" alt="image" id="right">
+            </div>
     </section>
-
-    <section>
+    
+    <section id="about">
+        <div class="note">
+            <img src="img/Note1.svg" alt="image">
+        </div>
+        <div class="information">
+            <h1>What is GabNotes?</h1>
+            <p>GabNotes is a digital note-taking application that allows users to create, manage, and organize their notes, tasks, and to-do lists</p>
+        </div>
+    </section>
+    
+    <section id="development">
+        <div class="tecnologies">
+            <h1>Technologies in use</h1>
+            <p>GabNotes was developed using a combination of technologies including JavaFX for the user interface, Java for the application logic, and potentially libraries like ControlsFX and DraggableFX for specific functionalities like drag-and-drop interactions.</p>
+            <br>
+            <p>You can follow the development of the project <a href="https://github.com/gabriel-nunes-s/GabNotes-To-Do-List" target="_next">here</a> </p>
+        </div>
+        <div class="java">
+            <img src="img/coffeecuplogoJava_5406.svg" alt="image-logo-java">
+        </div>
+    </section>
+    
+    <section id="who-am-i">
+        <main>
+            <div class="card">
+                <div class="avatar">
+                  <span>
+                    <img src="img/build.svg" alt="selo">
+                  </span>
+                  <img id="user_image" src="img/" alt="user image">
+                </div>
+                <h1 id="user_name">Gabriel Nunes</h1>
+                <a id="user_link" href="https://github.com/maykbrito" target="_blank" rel="external">
+                  <img src="img/github 2.svg" alt="github">
+                  <span id="user_login">maykbrito</span>
+                </a>
+                <p id="user_bio">Meu crachá para o Do While 2021. Apenas um aspirante a Dev Full Stack.</p>
+                <ul id="social_links">
+                  <li class="youtube">
+                    <a href="https://www.youtube.com/maykbrito" target="_blank" rel="external">
+                      <img src="img/Youtube.svg" alt="youtube">
+                    </a>
+                  </li>
+                  <li class="instagram">
+                    <a href="https://instagram.com/maykbrito" target="_blank" rel="external">
+                      <img src="img/Instagram.svg" alt="instagram">
+                    </a>
+                  </li>
+                  <li class="twitter">
+                    <a href="https://www.twitter.com/maykbrito" target="_blank" rel="external">
+                      <img src="img/Twitter.svg" alt="twitter">
+                    </a>
+                  </li>
+                  <li class="linkedin">
+                    <a href="https://www.linkedin.com/maykbrito" target="_blank" rel="external">
+                      <img src="img/linkedin.svg" alt="linkedin">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+        </main>
+    </section>
+    
+    <section id="footer">
         <footer>
+            <p>Gabriel's Enterprises Copyright © 2023 - All rights reserved || Designed By: Gabriel Nunes</p>
         </footer>
     </section>
     
+    <script src="script.js"></script>
 </body>
 </html>
